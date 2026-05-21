@@ -24,7 +24,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Contact Info */}
           <div>
-            <h2 className="font-heading text-2xl font-bold text-text mb-8">Get in Touch</h2>
+            <h2 className="font-heading text-2xl font-bold text-text mb-8" data-role="heading">Get in Touch</h2>
             <div className="space-y-6">
               {skinConfig.phone && (
                 <div className="flex items-start gap-4">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text">Phone</h3>
+                    <h3 className="font-semibold text-text" data-role="heading-2">Phone</h3>
                     <a href={`tel:${skinConfig.phone.replace(/[^\d+]/g, "")}`} className="text-primary hover:underline">
                       {skinConfig.phone}
                     </a>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text">Email</h3>
+                    <h3 className="font-semibold text-text" data-role="heading-3">Email</h3>
                     <a href={`mailto:${skinConfig.email}`} className="text-primary hover:underline">
                       {skinConfig.email}
                     </a>
@@ -58,7 +58,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text">Address</h3>
+                    <h3 className="font-semibold text-text" data-role="heading-4">Address</h3>
                     <p className="text-muted">{skinConfig.address}</p>
                   </div>
                 </div>
@@ -68,10 +68,10 @@ export default function ContactPage() {
                   <Clock className="h-5 w-5 text-primary" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-text">Office Hours</h3>
-                  <p className="text-muted">Monday – Friday: 8:00 AM – 6:00 PM</p>
-                  <p className="text-muted">Saturday – Sunday: 9:00 AM – 4:00 PM</p>
-                  <p className="text-muted text-sm mt-1">Tours available 7 days a week by appointment</p>
+                  <h3 className="font-semibold text-text" data-role="heading-5">Office Hours</h3>
+                  <p className="text-muted" data-role="text">Monday – Friday: 8:00 AM – 6:00 PM</p>
+                  <p className="text-muted" data-role="text-2">Saturday – Sunday: 9:00 AM – 4:00 PM</p>
+                  <p className="text-muted text-sm mt-1" data-role="text-3">Tours available 7 days a week by appointment</p>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div>
-            <h2 className="font-heading text-2xl font-bold text-text mb-8">Send Us a Message</h2>
+            <h2 className="font-heading text-2xl font-bold text-text mb-8" data-role="heading-6">Send Us a Message</h2>
             <ContactForm />
           </div>
         </div>

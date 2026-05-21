@@ -11,8 +11,8 @@ export default function BlogPage() {
     return (
       <div className="min-h-[60vh] bg-background py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-heading font-bold text-text">Blog</h1>
-          <p className="text-muted mt-4">No posts yet.</p>
+          <h1 className="text-4xl font-heading font-bold text-text" data-role="heading">Blog</h1>
+          <p className="text-muted mt-4" data-role="text">No posts yet.</p>
         </div>
       </div>
     );
@@ -21,7 +21,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-[60vh] bg-background py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-heading font-bold text-text mb-12">Blog</h1>
+        <h1 className="text-4xl font-heading font-bold text-text mb-12" data-role="heading-2">Blog</h1>
         <div className="grid gap-8">
           {blogPosts.map((post) => (
             <a
@@ -30,9 +30,9 @@ export default function BlogPage() {
               className="block p-6 bg-surface rounded-lg hover:shadow-lg transition-shadow"
             >
               {post.coverImage && (
-                <img src={post.coverImage} alt={post.title} className="w-full h-48 object-cover rounded mb-4" />
+                <img src={post.coverImage} alt={post.title} className="w-full h-48 object-cover rounded mb-4" data-role="media" />
               )}
-              <h2 className="text-2xl font-heading font-semibold text-text">{post.title}</h2>
+              <h2 className="text-2xl font-heading font-semibold text-text" data-role="heading-3">{post.title}</h2>
               <p className="text-muted mt-1 text-sm">
                 {post.date}{post.author ? ` · ${post.author}` : ""}
               </p>

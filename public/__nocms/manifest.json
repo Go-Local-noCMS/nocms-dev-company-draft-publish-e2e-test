@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "components": {
+    "content/cta-banner": {
+      "file": "src/components/content/CTABanner.tsx",
+      "tag": "section"
+    },
+    "content/care-cards": {
+      "file": "src/components/content/CareCards.tsx",
+      "tag": "SectionWrapper"
+    },
+    "content/care-type-detail": {
+      "file": "src/components/content/CareTypeDetail.tsx",
+      "tag": "article"
+    },
+    "content/contact-form": {
+      "file": "src/components/content/ContactForm.tsx",
+      "tag": "div"
+    },
+    "content/crisis-band": {
+      "file": "src/components/content/CrisisBand.tsx",
+      "tag": "section"
+    },
+    "content/faq-accordion": {
+      "file": "src/components/content/FaqAccordion.tsx",
+      "tag": "section"
+    },
+    "content/life-here-detail": {
+      "file": "src/components/content/LifeHereDetail.tsx",
+      "tag": "article"
+    },
+    "content/photo-grid": {
+      "file": "src/components/content/PhotoGrid.tsx",
+      "tag": "section"
+    },
+    "content/pricing-cards": {
+      "file": "src/components/content/PricingCards.tsx",
+      "tag": "section"
+    },
+    "content/resource-cards": {
+      "file": "src/components/content/ResourceCards.tsx",
+      "tag": "section"
+    },
+    "content/resource-detail": {
+      "file": "src/components/content/ResourceDetail.tsx",
+      "tag": "article"
+    },
+    "content/stats-bar": {
+      "file": "src/components/content/StatsBar.tsx",
+      "tag": "section"
+    },
+    "content/team-grid": {
+      "file": "src/components/content/TeamGrid.tsx",
+      "tag": "section"
+    },
+    "content/testimonials": {
+      "file": "src/components/content/Testimonials.tsx",
+      "tag": "section"
+    },
+    "content/why-section": {
+      "file": "src/components/content/WhySection.tsx",
+      "tag": "section"
+    },
+    "layout/footer": {
+      "file": "src/components/layout/Footer.tsx",
+      "tag": "footer"
+    },
+    "layout/navbar": {
+      "file": "src/components/layout/Navbar.tsx",
+      "tag": "header"
+    },
+    "layout/page-hero": {
+      "file": "src/components/layout/PageHero.tsx",
+      "tag": "section"
+    },
+    "layout/section-wrapper": {
+      "file": "src/components/layout/SectionWrapper.tsx",
+      "tag": "section"
+    },
+    "ui/badge": {
+      "file": "src/components/ui/Badge.tsx",
+      "tag": "span"
+    },
+    "ui/button": {
+      "file": "src/components/ui/Button.tsx",
+      "tag": "a"
+    },
+    "ui/divider": {
+      "file": "src/components/ui/Divider.tsx",
+      "tag": "div"
+    },
+    "ui/motion-wrapper": {
+      "file": "src/components/ui/MotionWrapper.tsx",
+      "tag": "div"
+    }
+  },
+  "pages": {}
+}

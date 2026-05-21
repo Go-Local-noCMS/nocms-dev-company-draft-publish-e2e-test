@@ -62,13 +62,13 @@ export function LifeHereDetail({ section }: LifeHereDetailProps) {
                     src={highlight.image}
                     alt={highlight.title}
                     className="w-full h-80 object-cover rounded-xl shadow-md"
-                    loading="lazy"
+                    loading="lazy" data-role="media-2"
                   />
                 </div>
               )}
               <div className={`w-full ${highlight.image ? "lg:w-1/2" : ""}`}>
-                <h2 className="font-heading text-2xl font-bold text-text mb-4">{highlight.title}</h2>
-                <p className="text-muted leading-relaxed">{highlight.description}</p>
+                <h2 className="font-heading text-2xl font-bold text-text mb-4" data-role="heading-2">{highlight.title}</h2>
+                <p className="text-muted leading-relaxed" data-role="subheading-2">{highlight.description}</p>
               </div>
             </div>
           ))}
@@ -80,7 +80,7 @@ export function LifeHereDetail({ section }: LifeHereDetailProps) {
       {/* Features list */}
       {section.features.length > 0 && (
         <SectionWrapper bg="surface">
-          <h2 className="font-heading text-3xl font-bold text-text text-center mb-10">
+          <h2 className="font-heading text-3xl font-bold text-text text-center mb-10" data-role="heading-3">
             What is Included
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -97,10 +97,10 @@ export function LifeHereDetail({ section }: LifeHereDetailProps) {
       {/* CTA */}
       <SectionWrapper bg="primary">
         <div className="text-center">
-          <h2 className="font-heading text-3xl font-bold text-white mb-4">
+          <h2 className="font-heading text-3xl font-bold text-white mb-4" data-role="heading-4">
             Experience It for Yourself
           </h2>
-          <p className="text-white/85 mb-8 max-w-lg mx-auto">
+          <p className="text-white/85 mb-8 max-w-lg mx-auto" data-role="subheading-3">
             Schedule a tour and discover the vibrant lifestyle waiting for you or your loved one.
           </p>
           <Button href="/schedule-tour" variant="secondary" size="lg">

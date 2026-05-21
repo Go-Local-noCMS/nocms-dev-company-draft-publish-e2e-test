@@ -23,11 +23,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <div className="min-h-[60vh] bg-background py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <a href="/resources/blog" className="text-primary hover:underline text-sm">&larr; Back to Blog</a>
+        <a href="/resources/blog" className="text-primary hover:underline text-sm" data-role="text">&larr; Back to Blog</a>
         {post.coverImage && (
-          <img src={post.coverImage} alt={post.title} className="w-full h-64 object-cover rounded-lg mt-6" />
+          <img src={post.coverImage} alt={post.title} className="w-full h-64 object-cover rounded-lg mt-6" data-role="media" />
         )}
-        <h1 className="text-4xl font-heading font-bold text-text mt-6">{post.title}</h1>
+        <h1 className="text-4xl font-heading font-bold text-text mt-6" data-role="heading">{post.title}</h1>
         <p className="text-muted mt-2">
           {post.date}{post.author ? ` · ${post.author}` : ""}
         </p>

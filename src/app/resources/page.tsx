@@ -31,27 +31,27 @@ export default function ResourcesPage() {
                   src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
                   alt="Senior living guide"
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  loading="lazy" data-role="media"
                 />
                 <div className="absolute top-4 left-4 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
                   Featured
                 </div>
               </div>
               <div className="p-8 flex flex-col justify-center">
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-2">
+                <span className="text-xs text-primary font-semibold uppercase tracking-wider mb-2" data-role="text">
                   <BookOpen className="inline h-3.5 w-3.5 mr-1" aria-hidden="true" />
                   Comprehensive Guide
                 </span>
-                <h2 className="font-heading text-2xl font-bold text-text mb-3">
+                <h2 className="font-heading text-2xl font-bold text-text mb-3" data-role="heading">
                   The Complete Guide to Senior Living
                 </h2>
-                <p className="text-muted leading-relaxed mb-6">
+                <p className="text-muted leading-relaxed mb-6" data-role="subheading">
                   Everything families need to know about choosing the right community, understanding care levels,
                   navigating costs, and making the transition smooth.
                 </p>
                 <a
                   href="/resources/faq"
-                  className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+                  className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all" data-role="text-2"
                 >
                   Read the Guide <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </a>
@@ -63,7 +63,7 @@ export default function ResourcesPage() {
 
       {/* Resource Pages */}
       <SectionWrapper bg="surface">
-        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10">
+        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10" data-role="heading-2">
           Explore Our Resources
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -74,11 +74,11 @@ export default function ResourcesPage() {
               className="group bg-background rounded-xl p-8 border border-text/5 hover:shadow-md transition-shadow block"
             >
               <span className="text-xs text-primary font-semibold uppercase tracking-wider">{page.tag}</span>
-              <h3 className="font-heading text-xl font-bold text-text mt-2 mb-3 group-hover:text-primary transition-colors">
+              <h3 className="font-heading text-xl font-bold text-text mt-2 mb-3 group-hover:text-primary transition-colors" data-role="heading-3">
                 {page.name}
               </h3>
-              <p className="text-muted text-sm leading-relaxed mb-4">{page.description}</p>
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+              <p className="text-muted text-sm leading-relaxed mb-4" data-role="subheading-2">{page.description}</p>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all" data-role="text-3">
                 Read More <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </span>
             </a>
@@ -87,14 +87,14 @@ export default function ResourcesPage() {
             href="/resources/blog"
             className="group bg-background rounded-xl p-8 border border-text/5 hover:shadow-md transition-shadow block"
           >
-            <span className="text-xs text-primary font-semibold uppercase tracking-wider">Blog</span>
-            <h3 className="font-heading text-xl font-bold text-text mt-2 mb-3 group-hover:text-primary transition-colors">
+            <span className="text-xs text-primary font-semibold uppercase tracking-wider" data-role="text-4">Blog</span>
+            <h3 className="font-heading text-xl font-bold text-text mt-2 mb-3 group-hover:text-primary transition-colors" data-role="heading-4">
               Blog & Guides
             </h3>
-            <p className="text-muted text-sm leading-relaxed mb-4">
+            <p className="text-muted text-sm leading-relaxed mb-4" data-role="subheading-3">
               Articles, tips, and expert advice on senior care, wellness, family support, and community living.
             </p>
-            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">
+            <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all" data-role="text-5">
               Visit Blog <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </span>
           </a>
@@ -104,18 +104,18 @@ export default function ResourcesPage() {
       {/* Quick Links */}
       <SectionWrapper bg="background">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-heading text-2xl font-bold text-text mb-8">Quick Links</h2>
+          <h2 className="font-heading text-2xl font-bold text-text mb-8" data-role="heading-5">Quick Links</h2>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="/pricing" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors">
+            <a href="/pricing" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors" data-role="text-6">
               Pricing Information
             </a>
-            <a href="/schedule-tour" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors">
+            <a href="/schedule-tour" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors" data-role="text-7">
               Schedule a Tour
             </a>
-            <a href="/living-options" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors">
+            <a href="/living-options" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors" data-role="text-8">
               Living Options
             </a>
-            <a href="/contact" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors">
+            <a href="/contact" className="inline-flex items-center gap-2 bg-surface border border-text/10 rounded-full px-6 py-3 text-sm font-medium text-text hover:border-primary hover:text-primary transition-colors" data-role="text-9">
               Contact Us
             </a>
           </div>

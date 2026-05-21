@@ -48,14 +48,14 @@ export default function LifeHerePage() {
                 src={section.heroImage}
                 alt={section.name}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
+                loading="lazy" data-role="media"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-text/80 via-text/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 z-[1]">
                 <span className="text-xs text-white/70 uppercase tracking-wider font-semibold">{section.tag}</span>
-                <h3 className="font-heading text-xl font-bold text-white mt-1 mb-2">{section.name}</h3>
+                <h3 className="font-heading text-xl font-bold text-white mt-1 mb-2" data-role="heading">{section.name}</h3>
                 <p className="text-white/80 text-sm line-clamp-2">{section.description}</p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white mt-3 group-hover:gap-3 transition-all">
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white mt-3 group-hover:gap-3 transition-all" data-role="text">
                   Explore <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </span>
               </div>
@@ -66,7 +66,7 @@ export default function LifeHerePage() {
 
       {/* Activity Cards */}
       <SectionWrapper bg="surface">
-        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12">
+        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12" data-role="heading-2">
           Popular Activities
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -76,12 +76,12 @@ export default function LifeHerePage() {
                 src={activity.image}
                 alt={activity.name}
                 className="w-full h-48 object-cover"
-                loading="lazy"
+                loading="lazy" data-role="media-2"
               />
               <div className="p-6">
                 <span className="text-xs text-primary font-semibold uppercase tracking-wider">{activity.category}</span>
-                <h3 className="font-heading text-lg font-bold text-text mt-1 mb-2">{activity.name}</h3>
-                <p className="text-muted text-sm leading-relaxed mb-3">{activity.description}</p>
+                <h3 className="font-heading text-lg font-bold text-text mt-1 mb-2" data-role="heading-3">{activity.name}</h3>
+                <p className="text-muted text-sm leading-relaxed mb-3" data-role="subheading">{activity.description}</p>
                 {activity.schedule && (
                   <p className="text-xs text-muted flex items-center gap-1.5">
                     <Clock className="h-3.5 w-3.5" aria-hidden="true" />
@@ -98,7 +98,7 @@ export default function LifeHerePage() {
 
       {/* Typical Day Timeline */}
       <SectionWrapper bg="background">
-        <h2 className="font-heading text-3xl font-bold text-text text-center mb-12">
+        <h2 className="font-heading text-3xl font-bold text-text text-center mb-12" data-role="heading-4">
           A Typical Day
         </h2>
         <div className="max-w-xl mx-auto space-y-0">

@@ -56,17 +56,17 @@ export default function PricingPage() {
 
       {/* Comparison Table */}
       <SectionWrapper bg="surface">
-        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10">
+        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10" data-role="heading">
           Compare Care Levels
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full max-w-4xl mx-auto text-sm">
             <thead>
               <tr className="border-b border-text/10">
-                <th className="text-left py-4 pr-4 font-semibold text-text">Feature</th>
-                <th className="text-center py-4 px-4 font-semibold text-text">Independent</th>
-                <th className="text-center py-4 px-4 font-semibold text-primary">Assisted</th>
-                <th className="text-center py-4 px-4 font-semibold text-text">Memory Care</th>
+                <th className="text-left py-4 pr-4 font-semibold text-text" data-role="text">Feature</th>
+                <th className="text-center py-4 px-4 font-semibold text-text" data-role="text-2">Independent</th>
+                <th className="text-center py-4 px-4 font-semibold text-primary" data-role="text-3">Assisted</th>
+                <th className="text-center py-4 px-4 font-semibold text-text" data-role="text-4">Memory Care</th>
               </tr>
             </thead>
             <tbody>
@@ -107,14 +107,14 @@ export default function PricingPage() {
           <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <DollarSign className="h-8 w-8 text-primary" aria-hidden="true" />
           </div>
-          <h2 className="font-heading text-2xl font-bold text-text mb-4">Need Financial Assistance?</h2>
-          <p className="text-muted leading-relaxed mb-8">
+          <h2 className="font-heading text-2xl font-bold text-text mb-4" data-role="heading-2">Need Financial Assistance?</h2>
+          <p className="text-muted leading-relaxed mb-8" data-role="subheading">
             We offer resources on Medicaid, VA benefits, long-term care insurance, and other assistance programs
             to help make senior living affordable. Our financial counselors provide free consultations.
           </p>
           <a
             href="/resources/financial-help"
-            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all" data-role="text-5"
           >
             Explore Financial Resources <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>

@@ -28,7 +28,7 @@ export function ResourceDetail({ resource }: ResourceDetailProps) {
     <article data-nocms-component="content/resource-detail">
       {/* Header */}
       <SectionWrapper bg="primary">
-        <a href="/resources" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-6 transition-colors">
+        <a href="/resources" className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm mb-6 transition-colors" data-role="text">
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           Back to Resources
         </a>
@@ -46,7 +46,7 @@ export function ResourceDetail({ resource }: ResourceDetailProps) {
         <div className="max-w-3xl mx-auto">
           {resource.sections.map((section, i) => (
             <div key={section.heading} className={`${i > 0 ? "mt-12 pt-12 border-t border-text/10" : ""}`}>
-              <h2 className="font-heading text-2xl font-bold text-text mb-4">{section.heading}</h2>
+              <h2 className="font-heading text-2xl font-bold text-text mb-4" data-role="heading-2">{section.heading}</h2>
               <div className="text-muted leading-relaxed whitespace-pre-line">{section.content}</div>
             </div>
           ))}
@@ -64,10 +64,10 @@ export function ResourceDetail({ resource }: ResourceDetailProps) {
               </Button>
             </div>
           )}
-          <h2 className="font-heading text-2xl font-bold text-text mb-3">
+          <h2 className="font-heading text-2xl font-bold text-text mb-3" data-role="heading-3">
             Have Questions?
           </h2>
-          <p className="text-muted mb-6">
+          <p className="text-muted mb-6" data-role="text-2">
             Our team is here to help you navigate senior living decisions. Reach out anytime.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -62,13 +62,13 @@ export function Footer({
               <a href={`tel:${phone.replace(/[^\d+]/g, "")}`} className="hover:text-white transition-colors">
                 {phone}
               </a>
-              <span className="mx-1">&middot;</span>
+              <span className="mx-1" data-role="text">&middot;</span>
               <Mail className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
               <a href={`mailto:${email}`} className="hover:text-white transition-colors">
                 {email}
               </a>
             </div>
-            <p className="text-white/50 text-xs">Mon&ndash;Fri: 9am&ndash;5pm &middot; Sat&ndash;Sun: 10am&ndash;4pm</p>
+            <p className="text-white/50 text-xs" data-role="text-2">Mon&ndash;Fri: 9am&ndash;5pm &middot; Sat&ndash;Sun: 10am&ndash;4pm</p>
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export function Footer({
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/50">
+          <p className="text-xs text-white/50" data-role="text-3">
             &copy; {new Date().getFullYear()} {brandName}. All rights reserved.
           </p>
           <div className="flex items-center gap-6">

@@ -66,7 +66,7 @@ export function CareTypeDetail({ careType }: CareTypeDetailProps) {
 
       {/* Features Grid */}
       <SectionWrapper bg="background">
-        <h2 className="font-heading text-3xl font-bold text-text text-center mb-12">
+        <h2 className="font-heading text-3xl font-bold text-text text-center mb-12" data-role="heading-2">
           What Sets Our {careType.title} Apart
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -80,10 +80,10 @@ export function CareTypeDetail({ careType }: CareTypeDetailProps) {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Icon className="h-6 w-6 text-primary" aria-hidden="true" />
                 </div>
-                <h3 className="font-heading text-lg font-semibold text-text mb-2">
+                <h3 className="font-heading text-lg font-semibold text-text mb-2" data-role="heading-3">
                   {feature.title}
                 </h3>
-                <p className="text-muted text-sm leading-relaxed">{feature.description}</p>
+                <p className="text-muted text-sm leading-relaxed" data-role="subheading-2">{feature.description}</p>
               </div>
             );
           })}
@@ -95,7 +95,7 @@ export function CareTypeDetail({ careType }: CareTypeDetailProps) {
       {/* Amenities */}
       {careType.amenities.length > 0 && (
         <SectionWrapper bg="surface">
-          <h2 className="font-heading text-3xl font-bold text-text text-center mb-10">
+          <h2 className="font-heading text-3xl font-bold text-text text-center mb-10" data-role="heading-4">
             Included Amenities
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -114,7 +114,7 @@ export function CareTypeDetail({ careType }: CareTypeDetailProps) {
         <SectionWrapper bg="primary">
           <blockquote className="max-w-3xl mx-auto text-center">
             <Star className="h-8 w-8 text-white/40 mx-auto mb-6" aria-hidden="true" />
-            <p className="text-xl sm:text-2xl text-white/95 font-body leading-relaxed italic mb-6">
+            <p className="text-xl sm:text-2xl text-white/95 font-body leading-relaxed italic mb-6" data-role="subheading-3">
               &ldquo;{careType.testimonial.quote}&rdquo;
             </p>
             <footer className="text-white/70">
@@ -133,12 +133,12 @@ export function CareTypeDetail({ careType }: CareTypeDetailProps) {
       <SectionWrapper bg="background">
         <div className="text-center max-w-2xl mx-auto">
           {careType.startingPrice && (
-            <p className="text-muted text-sm uppercase tracking-wider mb-2">Starting from</p>
+            <p className="text-muted text-sm uppercase tracking-wider mb-2" data-role="text">Starting from</p>
           )}
           {careType.startingPrice && (
             <p className="font-heading text-4xl font-bold text-primary mb-4">
               {careType.startingPrice}
-              <span className="text-lg text-muted font-normal">/month</span>
+              <span className="text-lg text-muted font-normal" data-role="text-2">/month</span>
             </p>
           )}
           {careType.pricingNote && (

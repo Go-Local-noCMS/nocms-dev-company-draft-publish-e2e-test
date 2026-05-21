@@ -1,0 +1,25 @@
+{
+  "colors": {
+    "primary": "#2563eb",
+    "secondary": "#6366f1",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "surface": "#f8fafc",
+    "text": "#0f172a",
+    "muted": "#64748b"
+  },
+  "typography": {
+    "headingFont": "Inter",
+    "bodyFont": "Inter",
+    "monoFont": "",
+    "scale": "default"
+  },
+  "spacing": "default",
+  "borderRadius": "md",
+  "shadows": "subtle",
+  "mood": "",
+  "motionStyle": "moderate",
+  "layoutStyle": "",
+  "designRules": [],
+  "designPatterns": {}
+}

@@ -25,10 +25,10 @@ export default function ScheduleTourPage() {
       {/* Hero */}
       <section className="bg-primary py-16 lg:py-20 text-center">
         <div className="mx-auto max-w-3xl px-4">
-          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4" data-role="heading">
             Schedule Your Tour
           </h1>
-          <p className="text-white/85 text-lg max-w-2xl mx-auto">
+          <p className="text-white/85 text-lg max-w-2xl mx-auto" data-role="subheading">
             See our community in person and discover why families choose us. Tours are available 7 days a week.
           </p>
         </div>
@@ -41,52 +41,52 @@ export default function ScheduleTourPage() {
             {submitted ? (
               <div className="text-center py-12 bg-surface rounded-xl">
                 <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" aria-hidden="true" />
-                <h2 className="font-heading text-2xl font-bold text-text mb-3">Tour Requested!</h2>
-                <p className="text-muted max-w-md mx-auto">
+                <h2 className="font-heading text-2xl font-bold text-text mb-3" data-role="heading-2">Tour Requested!</h2>
+                <p className="text-muted max-w-md mx-auto" data-role="subheading-2">
                   Thank you! Our team will contact you within 24 hours to confirm your visit. We look forward to showing you around.
                 </p>
-                <a href="/" className="inline-flex items-center gap-2 text-primary font-semibold mt-6 hover:gap-3 transition-all">
+                <a href="/" className="inline-flex items-center gap-2 text-primary font-semibold mt-6 hover:gap-3 transition-all" data-role="text">
                   Return Home <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
-                <h2 className="font-heading text-2xl font-bold text-text mb-2">Request a Tour</h2>
-                <p className="text-muted text-sm mb-6">Fill in your details and we will find a time that works for you.</p>
+                <h2 className="font-heading text-2xl font-bold text-text mb-2" data-role="heading-3">Request a Tour</h2>
+                <p className="text-muted text-sm mb-6" data-role="text-2">Fill in your details and we will find a time that works for you.</p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="tour-first" className="block text-sm font-medium text-text mb-1.5">
-                      First Name <span className="text-secondary">*</span>
+                    <label htmlFor="tour-first" className="block text-sm font-medium text-text mb-1.5" data-role="text-3">
+                      First Name <span className="text-secondary" data-role="text-4">*</span>
                     </label>
                     <input id="tour-first" type="text" required placeholder="First name" className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary" />
                   </div>
                   <div>
-                    <label htmlFor="tour-last" className="block text-sm font-medium text-text mb-1.5">
-                      Last Name <span className="text-secondary">*</span>
+                    <label htmlFor="tour-last" className="block text-sm font-medium text-text mb-1.5" data-role="text-5">
+                      Last Name <span className="text-secondary" data-role="text-6">*</span>
                     </label>
                     <input id="tour-last" type="text" required placeholder="Last name" className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary" />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="tour-email" className="block text-sm font-medium text-text mb-1.5">
+                  <label htmlFor="tour-email" className="block text-sm font-medium text-text mb-1.5" data-role="text-7">
                     <Mail className="inline h-4 w-4 mr-1.5 text-muted" aria-hidden="true" />
-                    Email <span className="text-secondary">*</span>
+                    Email <span className="text-secondary" data-role="text-8">*</span>
                   </label>
                   <input id="tour-email" type="email" required placeholder="you@example.com" className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <div>
-                  <label htmlFor="tour-phone" className="block text-sm font-medium text-text mb-1.5">
+                  <label htmlFor="tour-phone" className="block text-sm font-medium text-text mb-1.5" data-role="text-9">
                     <Phone className="inline h-4 w-4 mr-1.5 text-muted" aria-hidden="true" />
-                    Phone <span className="text-secondary">*</span>
+                    Phone <span className="text-secondary" data-role="text-10">*</span>
                   </label>
                   <input id="tour-phone" type="tel" required placeholder="(555) 000-0000" className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary" />
                 </div>
 
                 <div>
-                  <label htmlFor="tour-date" className="block text-sm font-medium text-text mb-1.5">
+                  <label htmlFor="tour-date" className="block text-sm font-medium text-text mb-1.5" data-role="text-11">
                     <Calendar className="inline h-4 w-4 mr-1.5 text-muted" aria-hidden="true" />
                     Preferred Date
                   </label>
@@ -94,7 +94,7 @@ export default function ScheduleTourPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="tour-interest" className="block text-sm font-medium text-text mb-1.5">
+                  <label htmlFor="tour-interest" className="block text-sm font-medium text-text mb-1.5" data-role="text-12">
                     Interested In
                   </label>
                   <select id="tour-interest" className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text focus:outline-none focus:ring-2 focus:ring-primary">
@@ -108,7 +108,7 @@ export default function ScheduleTourPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="tour-notes" className="block text-sm font-medium text-text mb-1.5">
+                  <label htmlFor="tour-notes" className="block text-sm font-medium text-text mb-1.5" data-role="text-13">
                     Additional Notes
                   </label>
                   <textarea id="tour-notes" rows={3} placeholder="Anything you would like us to know..." className="w-full px-4 py-3 rounded-lg border border-text/10 bg-background text-text placeholder:text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary resize-none" />
@@ -119,7 +119,7 @@ export default function ScheduleTourPage() {
                   Request Tour
                 </Button>
 
-                <p className="text-muted text-xs text-center">
+                <p className="text-muted text-xs text-center" data-role="text-14">
                   No commitment required. We just want to show you around.
                 </p>
               </form>
@@ -128,7 +128,7 @@ export default function ScheduleTourPage() {
 
           {/* What to Expect */}
           <div>
-            <h2 className="font-heading text-2xl font-bold text-text mb-8">What to Expect</h2>
+            <h2 className="font-heading text-2xl font-bold text-text mb-8" data-role="heading-4">What to Expect</h2>
             <div className="space-y-6">
               {whatToExpect.map((item) => (
                 <div key={item.title} className="flex items-start gap-4">
@@ -136,7 +136,7 @@ export default function ScheduleTourPage() {
                     <item.icon className="h-5 w-5 text-primary" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text">{item.title}</h3>
+                    <h3 className="font-semibold text-text" data-role="heading-5">{item.title}</h3>
                     <p className="text-muted text-sm mt-1">{item.description}</p>
                   </div>
                 </div>
@@ -144,29 +144,29 @@ export default function ScheduleTourPage() {
             </div>
 
             <div className="mt-10 bg-surface rounded-xl p-8 border border-text/5">
-              <h3 className="font-heading text-lg font-bold text-text mb-4">Tour FAQs</h3>
+              <h3 className="font-heading text-lg font-bold text-text mb-4" data-role="heading-6">Tour FAQs</h3>
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold text-text text-sm">Can I bring family members?</p>
-                  <p className="text-muted text-sm mt-1">Absolutely! We encourage families to visit together.</p>
+                  <p className="font-semibold text-text text-sm" data-role="text-15">Can I bring family members?</p>
+                  <p className="text-muted text-sm mt-1" data-role="text-16">Absolutely! We encourage families to visit together.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-text text-sm">Will I get to see an apartment?</p>
-                  <p className="text-muted text-sm mt-1">Yes, you will tour model apartments and any available units.</p>
+                  <p className="font-semibold text-text text-sm" data-role="text-17">Will I get to see an apartment?</p>
+                  <p className="text-muted text-sm mt-1" data-role="text-18">Yes, you will tour model apartments and any available units.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-text text-sm">Can I stay for a meal?</p>
-                  <p className="text-muted text-sm mt-1">We would love that. Enjoy a complimentary meal during your visit.</p>
+                  <p className="font-semibold text-text text-sm" data-role="text-19">Can I stay for a meal?</p>
+                  <p className="text-muted text-sm mt-1" data-role="text-20">We would love that. Enjoy a complimentary meal during your visit.</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-text text-sm">Is there a virtual tour option?</p>
-                  <p className="text-muted text-sm mt-1">Yes, we offer video tours for families who cannot visit in person.</p>
+                  <p className="font-semibold text-text text-sm" data-role="text-21">Is there a virtual tour option?</p>
+                  <p className="text-muted text-sm mt-1" data-role="text-22">Yes, we offer video tours for families who cannot visit in person.</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 text-center">
-              <p className="text-muted text-sm mb-2">Prefer to call?</p>
+              <p className="text-muted text-sm mb-2" data-role="text-23">Prefer to call?</p>
               <a
                 href={`tel:${skinConfig.phone.replace(/[^\d+]/g, "")}`}
                 className="inline-flex items-center gap-2 text-primary font-semibold text-lg hover:underline"

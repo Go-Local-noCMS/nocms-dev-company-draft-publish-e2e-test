@@ -45,18 +45,18 @@ export default function LivingOptionsPage() {
 
       {/* Comparison Table */}
       <SectionWrapper bg="surface">
-        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10">
+        <h2 className="font-heading text-3xl font-bold text-text text-center mb-10" data-role="heading">
           Compare Living Options
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full max-w-5xl mx-auto text-sm">
             <thead>
               <tr className="border-b border-text/10">
-                <th className="text-left py-4 pr-4 font-semibold text-text min-w-[140px]">Feature</th>
-                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]">Independent</th>
-                <th className="text-center py-4 px-3 font-semibold text-primary min-w-[120px]">Assisted</th>
-                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]">Memory Care</th>
-                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]">Respite</th>
+                <th className="text-left py-4 pr-4 font-semibold text-text min-w-[140px]" data-role="text">Feature</th>
+                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]" data-role="text-2">Independent</th>
+                <th className="text-center py-4 px-3 font-semibold text-primary min-w-[120px]" data-role="text-3">Assisted</th>
+                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]" data-role="text-4">Memory Care</th>
+                <th className="text-center py-4 px-3 font-semibold text-text min-w-[120px]" data-role="text-5">Respite</th>
               </tr>
             </thead>
             <tbody>
@@ -80,14 +80,14 @@ export default function LivingOptionsPage() {
           <div className="h-16 w-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
             <HelpCircle className="h-8 w-8 text-primary" aria-hidden="true" />
           </div>
-          <h2 className="font-heading text-2xl font-bold text-text mb-4">Not Sure Which Option Is Right?</h2>
-          <p className="text-muted leading-relaxed mb-8">
+          <h2 className="font-heading text-2xl font-bold text-text mb-4" data-role="heading-2">Not Sure Which Option Is Right?</h2>
+          <p className="text-muted leading-relaxed mb-8" data-role="subheading">
             That is completely normal. Our team can help assess your loved one's needs and recommend the best fit.
             Schedule a personal consultation — there is no obligation.
           </p>
           <a
             href="/schedule-tour"
-            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+            className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all" data-role="cta"
           >
             Schedule a Consultation <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </a>

@@ -32,8 +32,8 @@ export default function OurTeamPage() {
       {/* Credentials section */}
       <SectionWrapper bg="surface">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-heading text-2xl font-bold text-text mb-6">Credentials & Training</h2>
-          <p className="text-muted leading-relaxed mb-8">
+          <h2 className="font-heading text-2xl font-bold text-text mb-6" data-role="heading">Credentials & Training</h2>
+          <p className="text-muted leading-relaxed mb-8" data-role="subheading">
             Our team holds industry-leading certifications and participates in ongoing training programs to
             ensure the highest quality of care. Key credentials across our staff include:
           </p>
